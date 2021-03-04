@@ -1,0 +1,30 @@
+• Change current terminal name: ctrl+b , <TYPE TERMINAL NAME>
+• Create new terminal in current session: ctrl+b c
+• Move to previous/next terminal: ctrl+b p/n {previous/next correspondingly}
+Kill current terminal: ctrl+b & y
+• Kill current session: ctrl+b :kill-session<Enterkey>
+________________________________
+• Switch to other pane: ctrl+b o
+• Switch to other pane: ctrl+b ctrl+o
+(shuffle next to current place)
+__________________________________
+• Split terminal horizontally (divide current gosh): ctrl b %
+• Split terminal vertically (divide current gosh): ctrl b "
+• Delete current pane in current terminal ctrl+b x y
+• Show pane number: ctrl+b q
+__________________________________
+• Toggle between layouts: ctrl+b <space>
+• Move other terminal to current : ctrl+b :joinp -s :<main-terminal-index>
+• Move current pane to other-main-terminal: ctrl+b :joinp :<other-main-termina-index>
+• Show active sessions of tmux: tmux ls
+• [imp]Detach current pane from the session: ctrl+b d
+• Re-attch to existing tmux session: tmux attach-session -t <session-name>
+Tip: get active session name from, $tmux ls
+• INFO: tmux sessions will be preserved
+• Rename current session name: ctrl+b $ <type-desired-name> <Enter-key>
+• Attach to last session: tmux a
+• Attach to "given-name" session: tmux a -t "existing session name"
+• Move to previous/next session: ctrl+b ( or ctrl+b )
+• create tmux session with a name: tmux new -s mysession2
+• ctrl+b (hold ctrl key) and use arrow to move the divider
+• Switch pane: ctrl+b <use arrow key, with your comfort>
